@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <title>Portfolio | CS Student</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">PORTFOLIO.</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="resume.pdf" target="_blank" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="swup" class="transition-fade">
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content fade-in">
+          <span class="hero-subtitle">Hello There,</span>
+          <h1 class="heading-lg">I am <br /> <span class="text-gradient">Dhwanish Desai.</span></h1>
+          <p class="hero-desc"> I design and develop AI powered and full stack applications that solve real problems.
+            Passionate about turning ideas into scalable, user focused technology.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="about.html" class="btn"
+              style="border: 1px solid var(--text-secondary); color: var(--text-primary)">More About Me</a>
+          </div>
+        </div>
+        <div class="hero-image-container fade-in">
+          <img src="me.jpg" alt="Abstract Profile" class="hero-image" />
+        </div>
+      </div>
+    </header>
+
+    <!-- About Teaser Section -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid fade-in">
+          <div class="about-text">
+            <h2 class="heading-md">Who am I?</h2>
+            <p>I'm a Computer Science student specializing in Artificial Intelligence and Machine Learning.
+              I enjoy building practical tech solutions — from AI-driven tools to full-stack web apps —
+              that combine clean engineering with real-world impact
+            </p>
+            <a href="about.html" class="project-link">Read Full Bio &rarr;</a>
+          </div>
+          <div class="about-stats">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="project-card" style="text-align: center;">
+                <h3 class="heading-md" style="margin-bottom: 0.5rem; color: var(--accent-color)">3+</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Years Building and Learning </p>
+              </div>
+              <div class="project-card" style="text-align: center;">
+                <h3 class="heading-md" style="margin-bottom: 0.5rem; color: #8b5cf6">10+</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Projects | AI & Full Stack</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="section">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
+          <h2 class="heading-md fade-in" style="margin-bottom: 0;">Selected Works</h2>
+          <a href="projects.html" class="project-link fade-in">View All Projects &rarr;</a>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card fade-in">
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <h3 class="project-title">4D Geospatial History & Environmental Dashboard</h3>
+            <p class="project-desc">
+              Interactive full-stack application visualizing complex geospatial data across space and time.
+            </p>
+            <a href="projects.html" class="project-link">View Details &rarr;</a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card fade-in">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">AI/ML</span>
+              <span class="tag">FastAPI</span>
+            </div>
+            <h3 class="project-title">AI Satellite Image Analysis</h3>
+            <p class="project-desc">
+              Deep Learning system for real-time water body detection and satellite imagery annotation.
+            </p>
+            <a href="projects.html" class="project-link">View Details &rarr;</a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card fade-in">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Gemini API</span>
+            </div>
+            <h3 class="project-title">FitLime Fitness SaaS</h3>
+            <p class="project-desc">
+              Mobile-first fitness platform with AI companion and comprehensive progress tracking.
+            </p>
+            <a href="projects.html" class="project-link">View Details &rarr;</a>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card fade-in">
+            <div class="project-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+            <h3 class="project-title">Vision-Based Virtual Mouse</h3>
+            <p class="project-desc">
+              Real-time hand gesture control system using custom-built deep learning datasets.
+            </p>
+            <a href="projects.html" class="project-link">View Details &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="heading-md fade-in">Technical Skills</h2>
+        <div class="skills-container fade-in">
+          <span class="skill-item">Python</span>
+          <span class="skill-item">PyTorch / Deep Learning</span>
+          <span class="skill-item">C++</span>
+          <span class="skill-item">TypeScript / React</span>
+          <span class="skill-item">FastAPI</span>
+          <span class="skill-item">PostgreSQL / PostGIS</span>
+          <span class="skill-item">Mapbox / Geospatial</span>
+          <span class="skill-item">SQL / SQLite</span>
+          <span class="skill-item">TailwindCSS</span>
+          <span class="skill-item">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container fade-in">
+        <h2 class="heading-md">Let's Connect</h2>
+        <p style="margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+          Open for internships and freelance opportunities. Let's build something amazing together.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Say Hello</a>
+        <div style="margin-top: 4rem; opacity: 0.5; font-size: 0.875rem;">
+          &copy; 2026 Portfolio.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

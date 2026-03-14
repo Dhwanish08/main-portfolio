@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Contact | Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PORTFOLIO.</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="/resume.pdf" target="_blank" class="nav-link">Resume</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="swup" class="transition-fade">
+        <main class="container">
+            <!-- 1. The Hero Header -->
+            <header class="page-header fade-in">
+                <h1 class="heading-lg">Let's <span class="text-gradient">Connect</span></h1>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-style: italic;">
+                    Training models, building products, and always open to a good conversation. Let's connect.
+                </p>
+            </header>
+
+            <!-- 2. The Main Content Grid -->
+            <div class="contact-grid">
+                <!-- Left Column: The Direct Message Form -->
+                <div class="contact-card fade-in stagger-1">
+                    <h3 class="heading-md" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="reply_to" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="subject">Subject (Optional)</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="A few paragraphs about your project or inquiry..."
+                                required></textarea>
+                        </div>
+                        <div class="full-width">
+                            <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader" style="display: none;">Sending...</span>
+                            </button>
+                        </div>
+                        <div id="form-status" class="form-status" style="display: none; margin-top: 1rem; text-align: center; font-size: 0.9rem; border-radius: 8px; padding: 0.75rem;"></div>
+                    </form>
+                </div>
+
+                <!-- Right Column: Your Digital Footprint -->
+                <div class="fade-in stagger-2">
+                    <h3 class="heading-md" style="font-size: 1.5rem; margin-bottom: 1.5rem; padding-left: 0.5rem;">
+                        Digital Footprint</h3>
+                    <div class="footprint-list">
+                        <a href="mailto:hello@example.com" class="footprint-item">
+                            <div class="footprint-icon">✉️</div>
+                            <div class="footprint-text">
+                                <h4>Email</h4>
+                                <p>dhwanishdesai00@gmail.com</p>
+                            </div>
+                        </a>
+                        <div class="footprint-item">
+                            <div class="footprint-icon">📍</div>
+                            <div class="footprint-text">
+                                <h4>Location</h4>
+                                <p>Gandhinagar, Gujarat</p>
+                                <p style="font-size: 0.75rem; opacity: 0.7;">Open to roles in Ahmedabad & Remote</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Dhwanish08" target="_blank" class="footprint-item">
+                            <div class="footprint-icon">🐙</div>
+                            <div class="footprint-text">
+                                <h4>GitHub</h4>
+                                <p>github.com/Dhwanish08</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dhwanish/" target="_blank" class="footprint-item">
+                            <div class="footprint-icon">💼</div>
+                            <div class="footprint-text">
+                                <h4>LinkedIn</h4>
+                                <p>Connect on LinkedIn</p>
+                            </div>
+                        </a>
+                        <a href="https://discord.com/users/775675075013378048" target="_blank" class="footprint-item">
+                            <div class="footprint-icon">👾</div>
+                            <div class="footprint-text">
+                                <h4>Discord</h4>
+                                <p>Dhwanish</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. The "Quick Links" Footer -->
+            <div class="quick-links-footer fade-in">
+                <a href="/resume.pdf" target="_blank" class="btn btn-outline">📄 Download Resume</a>
+                <div class="availability">
+                    <span class="pulse-dot"></span>
+                    <span>Currently available for Summer 2026 Internships.</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Main Footer (Consistent with other pages) -->
+        <footer class="footer" style="margin-top: 8rem;">
+            <div class="container fade-in">
+                <div style="opacity: 0.5; font-size: 0.875rem;">
+                    &copy; 2026 Portfolio. Built with Vite & Vanilla JS.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
